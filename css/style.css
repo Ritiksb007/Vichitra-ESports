@@ -463,6 +463,70 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# Carousel Section
+--------------------------------------------------------------*/
+/* Carousel Section Fullscreen Styling */
+.carousel-section {
+  height: 100vh; /* Full screen height */
+  background-color: #f6f7fd;
+}
+
+/* Carousel Inner Images */
+.carousel-inner img {
+  width: 100%;
+  height: 100vh; /* Full screen height for images */
+  object-fit: cover; /* Ensures images fill the space without distortion */
+}
+
+/* Carousel Caption Styling */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.carousel-caption h5 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  color: #ddd;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Carousel Controls Styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+/* Indicators Styling */
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.1s;
+  
+}
+
+.carousel-indicators button.active {
+  background-color: #f82249;
+}
+
+/*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 
@@ -770,6 +834,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
 }
 
+/* Owl Carousel Navigation and Dots */
 #gallery .owl-nav,
 #gallery .owl-dots {
   margin-top: 25px;
@@ -781,6 +846,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-right: 2px solid #fff;
 }
 
+/* Dots Styling */
 #gallery .owl-dot {
   display: inline-block;
   margin: 0 5px;
@@ -794,10 +860,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #f82249;
 }
 
+/* Gallery Carousel Adjustments */
 #gallery .gallery-carousel .owl-stage-outer {
   overflow: visible;
 }
 
+/* Highlighting Center Image */
 #gallery .gallery-carousel .center {
   border: 6px solid #f82249;
   margin: -10px;
@@ -805,6 +873,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 4px;
   background: #fff;
   z-index: 1;
+}
+
+/* Image Styling for Consistency */
+#gallery .gallery-carousel img {
+  width: 100%;
+  height: 350px; /* Set fixed height for uniformity */
+  object-fit: cover; /* Ensures images scale proportionally without distortion */
+  border-radius: 8px; /* Optional: Adds rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better appearance */
+  transition: transform 0.3s ease; /* Adds smooth scaling on hover */
+}
+
+/* Hover Effect for Images */
+#gallery .gallery-carousel img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /*--------------------------------------------------------------
