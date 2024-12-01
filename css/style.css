@@ -1,10 +1,3 @@
-/*
-  Theme Name: TheEvent
-  Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -524,6 +517,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .carousel-indicators button.active {
   background-color: #f82249;
+}
+
+/* Smooth transition effect */
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
 }
 
 /*--------------------------------------------------------------
