@@ -952,40 +952,39 @@ Poster Section
 
 /* Card Section Styling */
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Increased min card size */
-  gap: 40px; /* Larger gap between cards */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   padding: 50px;
-  justify-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: 100%;
-  max-width: 350px; /* Increased max width for larger cards */
+  width: 250px;
   background: #fff;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Enhanced shadow for better aesthetics */
-  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   text-align: center;
-  padding: 30px; /* Increased padding for better content spacing */
-  transition: transform 0.3s ease;
+  padding: 20px;
+  transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05); /* Hover effect for interactivity */
+  transform: scale(1.05);
 }
 
 .card h3 {
-  font-size: 2rem; /* Larger heading for better readability */
+  font-size: 1.5rem;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .card .counter {
-  font-size: 2.5rem; /* Bigger counter text for emphasis */
+  font-size: 2rem;
   font-weight: bold;
   color: #f82249;
 }
-
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .card-container {
