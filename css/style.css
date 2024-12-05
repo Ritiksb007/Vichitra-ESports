@@ -57,7 +57,7 @@ h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
+  background: #fff url("../img/preloaders.png") no-repeat center center;
 }
 
 /* Back to top button */
@@ -455,84 +455,50 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Carousel Section
---------------------------------------------------------------*/
-/* Carousel Section Fullscreen Styling */
-.carousel-section {
-  height: 100vh; /* Full screen height */
-  background-color: #83838612;
-}
+/*----------------------------------------------------------------
+Poster Section 
+------------------------------------------------------------------*/
 
-/* Carousel Inner Images */
-.carousel-inner img {
+#poster {
   width: 100%;
-  height: 100vh; /* Full screen height for images */
-  object-fit: cover; /* Ensures images fill the space without distortion */
+  height: 100vh;
+  background: url(/img/about-bg.jpg) top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
 
-/* Carousel Caption Styling */
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  padding: 20px;
-  border-radius: 8px;
+#poster:before {
+  content: "";
+  background: rgba(200, 202, 210, 0.054);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.carousel-caption h5 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.carousel-caption p {
-  color: #ddd;
-  font-size: 16px;
-  margin: 0;
-}
-
-/* Carousel Controls Styling */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  padding: 10px;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(0.6);
-}
-
-/* Indicators Styling */
-.carousel-indicators button {
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  border-radius: 50%;
-  transition: background-color 0.1s;
-  
-}
-
-.carousel-indicators button.active {
-  background-color: #f82249;
-}
-
-/* Smooth transition effect */
-.carousel-item {
-  transition: transform 0.3s ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .carousel-inner img {
-    height: auto; /* Allows images to scale based on width */
-    object-fit: cover; /* Ensures image covers the container */
-  }
-
-  .carousel-section {
-    height: auto; /* Prevents blank space by allowing dynamic height */
-  }
+#poster.intro-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 90px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
 }
 
 /*--------------------------------------------------------------
@@ -766,73 +732,85 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
   color: #fff;
 }
-
 /*--------------------------------------------------------------
-# Venue Section
+# Carousel Section
 --------------------------------------------------------------*/
-
-#venue {
-  padding: 60px 0;
+/* Carousel Section Fullscreen Styling */
+.carousel-section {
+  height: 100vh; /* Full screen height */
+  background-color: #83838612;
 }
 
-#venue .container-fluid {
-  margin-bottom: 3px;
-}
-
-#venue .venue-map iframe {
+/* Carousel Inner Images */
+.carousel-inner img {
   width: 100%;
-  height: 100%;
-  min-height: 300px;
+  height: 100vh; /* Full screen height for images */
+  object-fit: cover; /* Ensures images fill the space without distortion */
 }
 
-#venue .venue-info {
-  background: url("../img/venue-info-bg.jpg") top center no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+/* Carousel Caption Styling */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 20px;
+  border-radius: 8px;
 }
 
-#venue .venue-info:before {
-  content: "";
-  background: rgba(13, 20, 41, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#venue .venue-info h3 {
-  font-size: 36px;
-  font-weight: 700;
+.carousel-caption h5 {
   color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-#venue .venue-info p {
-  color: #fff;
-  margin-bottom: 0;
+.carousel-caption p {
+  color: #ddd;
+  font-size: 16px;
+  margin: 0;
 }
 
-#venue .venue-gallery-container {
-  padding-right: 12px;
+/* Carousel Controls Styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
 }
 
-#venue .venue-gallery {
-  overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(0.6);
 }
 
-#venue .venue-gallery img {
-  transition: all ease-in-out 0.4s;
+/* Indicators Styling */
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.1s;
+  
 }
 
-#venue .venue-gallery:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.carousel-indicators button.active {
+  background-color: #f82249;
 }
 
+/* Smooth transition effect */
+.carousel-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: auto; /* Allows images to scale based on width */
+    object-fit: cover; /* Ensures image covers the container */
+  }
+
+  .carousel-section {
+    height: auto; /* Prevents blank space by allowing dynamic height */
+  }
+}
 
 /*--------------------------------------------------------------
 # Gallery Section
@@ -902,77 +880,121 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Sponsors Section
 --------------------------------------------------------------*/
-
+/* Sponsor Section Styling */
 #sponsors {
   padding: 60px 0;
-}
-
-#sponsors .sponsors-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
-  margin-bottom: 30px;
-}
-
-#sponsors .sponsor-logo {
-  padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-right: 1px solid #e0e5fa;
-  border-bottom: 1px solid #e0e5fa;
+  background: url("../img/about-bg.jpg");
+  background-size: cover;
   overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 60px 0 40px 0;
+
+}
+#sponsors:before {
+  content: "";
+  background: rgba(184, 189, 202, 0.395);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.sponsors-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
+  gap: 20px; /* Reduced spacing for closer logos */
+  justify-items: center;
+  align-items: center;
+}
+
+.sponsor-logo {
   background: rgba(255, 255, 255, 0.5);
-  height: 160px;
-}
-
-#sponsors .sponsor-logo:hover img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-#sponsors img {
-  transition: all 0.4s ease-in-out;
-}
-
-.card-container {
+  padding: 10px; /* Reduced padding for compact spacing */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  width: 100%; /* Ensure uniform size */
+  max-width: 200px; /* Fixed size for logos */
+  height: 150px; /* Fixed height for logos */
+}
+
+.sponsor-logo img {
+  width: 100%;
+  max-width: 150px; /* Fixed maximum width for images */
+  height: auto;
+  object-fit: contain; /* Prevent cropping */
+  transition: transform 0.4s ease-in-out;
+}
+
+.sponsor-logo:hover img {
+  transform: scale(1.1); /* Hover effect for interactivity */
+}
+
+/* Responsive for mobile view */
+@media (max-width: 768px) {
+  .sponsors-wrap {
+    grid-template-columns: repeat(3, 1fr); /* Keep 3 columns for all devices */
+    gap: 15px; /* Slightly smaller gap for mobile */
+  }
+
+  .sponsor-logo {
+    max-width: 180px; /* Adjusted for smaller screens */
+    height: 130px; /* Adjusted height for consistency */
+  }
+
+  .sponsor-logo img {
+    max-width: 130px; /* Adjusted size for smaller screens */
+  }
+}
+
+/* Card Section Styling */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Increased min card size */
+  gap: 40px; /* Larger gap between cards */
   padding: 50px;
-  flex-wrap: wrap;
+  justify-items: center;
 }
 
 .card {
-  width: 250px;
+  width: 100%;
+  max-width: 350px; /* Increased max width for larger cards */
   background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Enhanced shadow for better aesthetics */
+  border-radius: 12px;
   text-align: center;
-  padding: 20px;
-  transition: transform 0.3s;
+  padding: 30px; /* Increased padding for better content spacing */
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Hover effect for interactivity */
 }
 
 .card h3 {
-  font-size: 1.5rem;
+  font-size: 2rem; /* Larger heading for better readability */
   color: #333;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .card .counter {
-  font-size: 2rem;
+  font-size: 2.5rem; /* Bigger counter text for emphasis */
   font-weight: bold;
   color: #f82249;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for smaller screens */
+  }
+
+  .card {
+    max-width: 300px; /* Slightly smaller for mobile view */
+  }
 }
 
 /*--------------------------------------------------------------
