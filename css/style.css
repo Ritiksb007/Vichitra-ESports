@@ -686,85 +686,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
   color: #fff;
 }
-/*--------------------------------------------------------------
-# Carousel Section
---------------------------------------------------------------*/
-/* Carousel Section Fullscreen Styling */
-.carousel-section {
-  height: 100vh; /* Full screen height */
-  background-color: #83838612;
-}
-
-/* Carousel Inner Images */
-.carousel-inner img {
-  width: 100%;
-  height: 100vh; /* Full screen height for images */
-  object-fit: cover; /* Ensures images fill the space without distortion */
-}
-
-/* Carousel Caption Styling */
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.carousel-caption h5 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.carousel-caption p {
-  color: #ddd;
-  font-size: 16px;
-  margin: 0;
-}
-
-/* Carousel Controls Styling */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  padding: 10px;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(0.6);
-}
-
-/* Indicators Styling */
-.carousel-indicators button {
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  border-radius: 50%;
-  transition: background-color 0.1s;
-  
-}
-
-.carousel-indicators button.active {
-  background-color: #f82249;
-}
-
-/* Smooth transition effect */
-.carousel-item {
-  transition: transform 0.3s ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .carousel-inner img {
-    height: auto; /* Allows images to scale based on width */
-    object-fit: cover; /* Ensures image covers the container */
-  }
-
-  .carousel-section {
-    height: auto; /* Prevents blank space by allowing dynamic height */
-  }
-}
 
 /*--------------------------------------------------------------
 # Gallery Section
@@ -837,7 +758,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sponsor Section Styling */
 #sponsors {
   padding: 60px 0;
-  background: url("../img/about-bg.jpg");
+  /* background: url("../img/about-bg.jpg"); */
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -847,7 +768,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #sponsors:before {
   content: "";
-  background: rgba(184, 189, 202, 0.395);
+  background: rgb(255, 255, 255);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -871,7 +792,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   justify-content: center;
   align-items: center;
   width: 100%; /* Ensure uniform size */
-  max-width: 200px; /* Fixed size for logos */
+  max-width: 300px; /* Fixed size for logos */
   height: 150px; /* Fixed height for logos */
 }
 
@@ -904,6 +825,123 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+/* Ads section */
+
+/* For making changes in the add size make it in #ads-section min-height and padding */
+#ads-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px; /* Adjust height as needed */
+  padding: 10px;
+  background-color: #f5f5f5; /* Light background for contrast */
+}
+
+.ad-box {
+  width: 50%; /* Default for larger screens (desktop) */
+  background-color: #ffffff; /* White background */
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 15px;
+  text-align: center;
+  margin: 0 20px; /* Left and right margin */
+}
+
+.ad-box img {
+  max-width: 100%; /* Ensures the image doesn't exceed the box width */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 5px; /* Slight rounding of image corners */
+}
+
+.ad-box p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .ad-box {
+    width: 90%; /* Make the ad-box fill more of the screen on smaller devices */
+    margin: 0 auto; /* Center align with auto margins */
+    padding: 20px; /* Slightly increase padding for smaller screens */
+  }
+
+  .ad-box p {
+    font-size: 14px; /* Adjust font size for better readability on small screens */
+  }
+}
+
+
+/* Very Small Screens (e.g., narrow phones) */
+@media (max-width: 480px) {
+  .ad-box {
+    width: 95%; /* Use almost full width on very small devices */
+    padding: 6px; /* Adjust padding for compact screens */
+  }
+
+  .ad-box p {
+    font-size: 12px; /* Further adjust font size */
+  }
+}
+
+
+
+/* #sponsor-ads {
+  background: #f6f7fd;
+  padding: 60px 0;
+}
+
+#sponsor-ads .section-header h2 {
+  color: #0e1b4d;
+}
+
+#sponsor-ads .section-header p {
+  color: #9195a2;
+}
+
+.ads-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.ad-item {
+  width: calc(33.333% - 20px);
+  max-width: 300px;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+
+.ad-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ad-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991px) {
+  .ad-item {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 576px) {
+  .ad-item {
+    width: 100%;
+  }
+} */
+
+
 /* Card Section Styling */
 .card-container {
   display: flex;
@@ -918,9 +956,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 250px;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 8px;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   transition: transform 0.3s;
 }
 
@@ -931,11 +969,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 .card h3 {
   font-size: 1.5rem;
   color: #333;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .card .counter {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #f82249;
 }
@@ -946,7 +984,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .card {
-    max-width: 300px; /* Slightly smaller for mobile view */
+    max-width: 250px; /* Slightly smaller for mobile view */
   }
 }
 
