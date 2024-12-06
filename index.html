@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Official Vichitra ESports</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
@@ -41,38 +42,46 @@
 <!--==========================
     Poster Section
   ============================-->
-  <section id="poster">
-    <div class="poster">
-      <!-- <a href="https://www.youtube.com/shorts/ZNOPvqV22JM" class="venobox play-btn mb-4" data-vbtype="video"
-        data-autoplay="true"></a> -->
-      <!-- <a href="https://forms.gle/M9fif8FM4uyTQiL9A" class="about-btn scrollto">For Event Registration</a> -->
-    </div>
-  </section>
+
+  <div class="container-fluid p-0">
+    <img src="/img/poster/poster.jpg" class="img-fluid d-block" alt="#header" style="margin-top: 70px; width: 100%; height: auto;">
+  </div>
 
   <!--==========================
     Header
   ============================-->
-  <header id="header">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
-      </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#about">Events/dropdown-1) Masters Leagus Registration->Registration Link 2) past events-> Gallary</a></li>
-          <li><a href="#footer">Support</a></li>
-          <li><a href="#footer">Services</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
+  <header id="header" class="header-scrolled" style="background-color: rgba(6, 12, 34, 0.98);">
+  <div class="container">
+    <div id="logo" class="pull-left">
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1><a href="#main">C<span>o</span>nf</a></h1> -->
+      <a href="#intro" class="scrollto">
+        <img src="img/logo.png" alt="Logo" title="Conference Logo">
+      </a>
     </div>
-  </header><!-- #header -->
 
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li class="menu-active"><a href="#intro">Home</a></li>
+        <li><a href="#about">About</a></li>
+        
+        <!-- Dropdown Menu for Events -->
+        <li class="menu-has-children">
+          <a href="#">Events</a>
+          <ul>
+            <li><a href="#intro">Masters League Registration</a></li>
+            <li><a href="#gallery">Past Events</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#footer">Support</a></li>
+        <li><a href="#footer">Services</a></li>
+      </ul>
+    </nav><!-- #nav-menu-container -->
+  </div>
+</header><!-- #header -->
+
+  
   <!--==========================
     Intro Section
   ============================-->

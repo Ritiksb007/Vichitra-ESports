@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 body {
-  background: #fff;
+  background: #ffffff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
@@ -453,83 +453,6 @@ body.mobile-nav-active #mobile-nav {
 
 body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
-}
-
-/*----------------------------------------------------------------
-Poster Section 
-------------------------------------------------------------------*/
-
-/* Poster Section */
-#poster {
-  width: 100%;
-  min-height: 100vh; /* Ensure it covers the full viewport height */
-  background: url(../img/poster/poster.jpg);
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  /* margin-top: 90px; Push below fixed header */
-}
-
-#poster:before {
-  content: "";
-  /* background: rgba(6, 12, 34, 0.8); */
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#poster.poster {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 90px;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 15px;
-}
-
-/* Responsive Design */
-@-webkit-keyframes pulsate-btn {
-  0% {
-    -webkit-transform: scale(0.6, 0.6);
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
-@keyframes pulsate-btn {
-  0% {
-    -webkit-transform: scale(0.6, 0.6);
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    opacity: 0;
-  }
 }
 
 /*--------------------------------------------------------------
