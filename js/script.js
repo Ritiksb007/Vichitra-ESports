@@ -33,9 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //loader javascript
 window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
-
-  // Add a delay of 2 seconds (2000 milliseconds)
   setTimeout(() => {
     preloader.style.display = "none";
-  },2500); // Adjust the duration as needed
+  },1000); // Adjust the duration as needed
 });
