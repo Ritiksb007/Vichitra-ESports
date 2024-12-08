@@ -3,8 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Services - Vichitra Esports</title>
+  <title>Official Vichitra ESports</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -13,8 +24,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -27,36 +38,44 @@
 </head>
 
 <body>
-
-  <!-- Header -->
+  
+  <!--==========================
+    Header
+  ============================-->
   <header id="header" class="header-scrolled" style="background-color: rgba(6, 12, 34, 0.98);">
-    <div class="container">
-      <div id="logo" class="pull-left">
-        <a href="index.html" class="scrollto">
-          <img src="img/logo.png" alt="Logo">
-        </a>
-      </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="menu-has-children">
-            <a href="#">Events</a>
-            <ul>
-              <li><a href="index.html#intro">Masters League Registration</a></li>
-              <li><a href="index.html#gallery">Past Events</a></li>
-            </ul>
-          </li>
-          <li><a href="index.html#footer">Support</a></li>
-          <!-- <li class="menu-active"><a href="services.html">Services</a></li> -->
-          <li><a href="privacy_policy.html">Privacy Policy</a></li>
-        </ul>
-      </nav>
+  <div class="container">
+    <div id="logo" class="pull-left">
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1><a href="#main">C<span>o</span>nf</a></h1> -->
+      <a href="#intro" class="scrollto">
+        <img src="img/logo.png" alt="Logo" title="Conference Logo">
+      </a>
     </div>
-  </header>
 
-  <main id="main">
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li class="menu-active"><a href="index.html#intro">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        
+        <!-- Dropdown Menu for Events -->
+        <li class="menu-has-children">
+          <a href="#">Events</a>
+          <ul>
+            <li><a href="index.html#intro">Masters League Registration</a></li>
+            <li><a href="index.html#gallery">Past Events</a></li>
+          </ul>
+        </li>
+
+        <li><a href="index.html#footer">Support</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+    </nav><!-- #nav-menu-container -->
+
+  </div>
+</header><!-- #header -->
+
+<main id="main">
 
     <!-- Services Section -->
     <section id="services" class="wow fadeInUp">
@@ -115,34 +134,35 @@
     </section>
 
   </main>
-
-  <!-- Footer -->
+<!--==========================
+    Footer
+  ============================-->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-info">
-            <img src="img/logo.png" alt="TheEvent">
+            <img src="img/logo.png" alt="TheEvenet">
             <p>Vichitra Esports is a leading organization dedicated to transforming the Indian esports landscape. We aim to empower gaming talent, foster inclusivity, and create platforms for players to showcase their skills. Alongside flagship events like the BGMI LAN Event – Nagpur 2024, we also organize a variety of online gaming tournaments across multiple genres, building a thriving community that connects grassroots talent to national opportunities while celebrating the dynamic spirit of esports.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="about.html">About us</a></li>
-              <!-- <li><i class="fa fa-angle-right"></i> <a href="services.html">Services</a></li> -->
-              <li><i class="fa fa-angle-right"></i> <a href="privacy_policy.html">Privacy Policy</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="index.html#intro">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="about.html">About Us</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="PrivacyPolicy.html">Privacy policy</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="faqs.html">FAQs</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              Nagpur, Maharastra<br>
+              Nagpur, Maharastra <br>
               India<br>
-              <strong>Phone:</strong> <a href="tel:+919270164158">+91 92701 64158</a><br>
+              <strong>Phone:</strong><a href="tel: +91 92701 64158"> +91 92701 64158</a><br>
               <strong>Email:</strong> <a href="mailto:officialvichitraesports@gmail.com">officialvichitraesports@gmail.com</a><br>
             </p>
 
@@ -154,26 +174,38 @@
               <a href="https://www.linkedin.com/company/vichitraesports/" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright 2024 <strong>Vichitra Esports</strong>. All Rights Reserved
+        &copy; Copyright 2024 <strong>Vichitra ESports</strong>. All Rights Reserved
       </div>
+      <!-- <div class="credits">
+        Designed & Developed by <a href="https://www.linkedin.com/in/ritik-malviya-a0b411267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Ritik Malviya</a> and <a href="https://www.instagram.com/darshansonare21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Darshan Sonare</a>
+      </div> -->
     </div>
-  </footer>
+  </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
   <script src="lib/venobox/venobox.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 </body>
 

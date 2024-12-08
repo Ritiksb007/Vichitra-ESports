@@ -888,6 +888,39 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Ads section */
 
+/* Video Section */
+.video-section {
+  text-align: center;
+  margin: 2rem 0; /* Adjusted to fit the website structure */
+  padding: 1rem 0;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.video-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.video {
+  width: 100%; /* Ensure video scales with container */
+  max-width: 800px; /* Limit maximum size */
+  border: 2px solid #02067b; /* Matches website's color scheme */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .video-section {
+    padding: 1.5rem 0;
+  }
+
+  .video {
+    width: 90%; /* Reduce size on smaller screens */
+  }
+}
+
+
 /* For making changes in the add size make it in #ads-section min-height and padding */
 #ads-section {
   display: flex;

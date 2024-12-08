@@ -35,5 +35,21 @@ window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
   setTimeout(() => {
     preloader.style.display = "none";
-  },1000); // Adjust the duration as needed
+  },800); // Adjust the duration as needed
+});
+
+
+// JavaScript for Toggle Behavior
+document.querySelectorAll('.faq .faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    // Close all other FAQ items
+    document.querySelectorAll('.faq .faq-item').forEach(el => {
+      if (el !== item) {
+        el.classList.remove('active');
+      }
+    });
+
+    // Toggle current FAQ item
+    item.classList.toggle('active');
+  });
 });
