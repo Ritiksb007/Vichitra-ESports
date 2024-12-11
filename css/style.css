@@ -851,18 +851,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 5px; /* Reduced padding for compact spacing */
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%; /* Ensure uniform size */
-  max-width: 300px; /* Fixed size for logos */
+  align-items: stretch;
+  width: 120%; /* Ensure uniform size */
+  max-width: 500px; /* Fixed size for logos */
   height: 250px; /* Fixed height for logos */
 }
 
 .sponsor-logo img {
-  width: 100%;
-  max-width: 250px; /* Fixed maximum width for images */
+  width: 200%;
+  max-width: 400px; /* Fixed maximum width for images */
   height: auto;
   object-fit: contain; /* Prevent cropping */
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 .sponsor-logo:hover img {
@@ -872,17 +872,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Responsive for mobile view */
 @media (max-width: 768px) {
   .sponsors-wrap {
-    grid-template-columns: repeat(3, 1fr); /* Keep 3 columns for all devices */
-    gap: 10px; /* Slightly smaller gap for mobile */
+    grid-template-columns: repeat(2, 1fr); /* Keep 3 columns for all devices */
+    gap: 22px; /* Slightly smaller gap for mobile */
   }
 
   .sponsor-logo {
-    max-width: 180px; /* Adjusted for smaller screens */
-    height: 130px; /* Adjusted height for consistency */
+    max-width: 2200px; /* Adjusted for smaller screens */
+    height: 150px; /* Adjusted height for consistency */
   }
 
   .sponsor-logo img {
-    max-width: 130px; /* Adjusted size for smaller screens */
+    max-width: 140px; /* Adjusted size for smaller screens */
   }
 }
 
@@ -926,13 +926,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 150px; /* Adjust height as needed */
+  min-height: 200px; /* Adjust height as needed */
   padding: 10px;
   background-color: #f5f5f5; /* Light background for contrast */
 }
 
 .ad-box {
-  width: 50%; /* Default for larger screens (desktop) */
+  width: 80%; /* Default for larger screens (desktop) */
   background-color: #ffffff; /* White background */
   border: 1px solid #e0e0e0; /* Subtle border */
   border-radius: 8px;
@@ -943,7 +943,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .ad-box img {
-  max-width: 100%; /* Ensures the image doesn't exceed the box width */
+  max-width: 200%; /* Ensures the image doesn't exceed the box width */
   height: auto; /* Maintains the aspect ratio */
   border-radius: 5px; /* Slight rounding of image corners */
 }
@@ -1078,7 +1078,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .card {
-    max-width: 250px; /* Slightly smaller for mobile view */
+    max-width: 270px; /* Slightly smaller for mobile view */
   }
 }
 
