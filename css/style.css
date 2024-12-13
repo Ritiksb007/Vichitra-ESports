@@ -75,7 +75,7 @@ Loading
 }
 
 .loader {
-  border: 5px solid #f3f3f3; /* Light grey */
+  border: 5px solid #ffffff; /* Light grey */
   border-top: 5px solid #3498db; /* Blue */
   border-radius: 50%;
   width: 50px;
