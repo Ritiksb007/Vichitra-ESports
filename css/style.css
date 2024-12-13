@@ -58,7 +58,7 @@ Loading
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.817);  /*or any color you want */
+  background: rgb(255, 255, 255);  /*or any color you want */
   z-index: 9999; /* Ensure it's on top of all content */
   display: flex;
   justify-content: center;
