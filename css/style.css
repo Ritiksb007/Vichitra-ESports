@@ -75,7 +75,7 @@ Loading
   max-height: 360px; /* Limit the maximum height */
   object-fit: contain; /* Ensure the logo fits within the dimensions */
   
-  animation: diagonalZoom 5s ease-in-out;
+  animation: diagonalZoom 5s ease-in-out infinite;
 }
 
 .loader {
@@ -216,7 +216,7 @@ Loading
 #header.header-fixed {
   background: rgba(6, 12, 34, 0.98);
   height: 70px;
-  padding: 15px 0;
+  padding: 10px 0;
   transition: all 0.5s;
 }
 
