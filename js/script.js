@@ -35,7 +35,7 @@ window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
   setTimeout(() => {
     preloader.style.display = "none";
-  },5000); // Adjust the duration as needed
+  },800); // Adjust the duration as needed
 });
 
 
